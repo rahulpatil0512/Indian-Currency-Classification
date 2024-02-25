@@ -1,0 +1,29 @@
+Link to download the dataset
+
+https://data.mendeley.com/datasets/48ympv8jjf/1
+
+The dataset is updated, Image folder containing images of 1000 denomination has been removed and images of 200 and 2000 denominations are added.
+Need to make saome changes in code
+
+In this code, 
+
+class_names = ['Ten', 'Twenty', 'Fifty', 'Hundred', 'Five_Hundred', 'Thousand']   
+
+predicted_class_index_cnn = np.argmax(prediction_cnn)
+predicted_class_name_cnn = class_names[predicted_class_index_cnn]
+
+predicted_class_index_resnet = np.argmax(prediction_resnet)
+predicted_class_name_resnet = class_names[predicted_class_index_resnet]
+
+predicted_class_index_vgg = np.argmax(prediction_vgg)
+predicted_class_name_vgg = class_names[predicted_class_index_vgg]
+
+predicted_class_index_xcep = np.argmax(prediction_xcep)
+predicted_class_name_xcep = class_names[predicted_class_index_xcep]
+
+
+You have to change the class_names,
+
+class_names = ['Ten', 'Twenty', 'Fifty', 'Hundred', 'Five_Hundred', 'Two_Thousand', 'Two_Hundred']
+
+Also make changes in the naming of the image folder when saving in the Laptop/PC.
